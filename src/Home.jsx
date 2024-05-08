@@ -30,7 +30,7 @@ function Home () {
    
     <div className='container'>
      <div className='row justify-content-center'>
-        <div className='col-12'>
+        <div className=' col-12'>
             {
                 data.map((item, index)=> <div className='card mb-5'>
                     <div className='card-header'>
@@ -42,7 +42,7 @@ function Home () {
 
                     </div>    
                     <div className='card-footer'>
-                    <Link className=" btn btn-primary ms-2" to={"/Detail/"+ item.id}>დეტალურად ნახვა</Link>
+                    <Link className=" btn btn-primary ms-2 " to={"/Detail/"+ item.id}>დეტალურად ნახვა</Link>
                      
                     
 

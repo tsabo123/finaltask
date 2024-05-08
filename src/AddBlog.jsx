@@ -3,7 +3,7 @@ import axios from 'axios';
 import { useParams } from "react-router-dom";
 import Navbar from './Navbar';
 
-function Detail() {
+function AddBlog() {
     const [data, setData] = useState({});
     const { id } = useParams();
 
@@ -41,4 +41,4 @@ function Detail() {
     );
 };
 
-export default Detail;
+export default AddBlog;
