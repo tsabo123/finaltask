@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import React, { useState } from "react";
  import { useNavigate } from "react-router-dom";
  import axios from "axios";
+ import Footer from './Footer';
 
 
 
@@ -32,12 +33,12 @@ function Signup(){
       })
     }
     return(
-        <React.Fragment>
-        <div className="container mt-5">
-          <div className="row justify-content-center  ">
+        <React.Fragment className= "position-relative">
+        <div className="container mt-5 position-relative">
+          <div className="row  justify-content-center ">
               <div className="col-6">
 
-               
+                <h2 className='d-flex justify-content-center '>გაიარეთ რეგისტრაცია</h2>
                 <form method="POST" onSubmit={(event)=> Signup (event)}>
                 <div className="form-group mb-3">
                         <label htmlFor="Name">Name, Lastname</label>
@@ -53,8 +54,8 @@ function Signup(){
                          <input  className="form-control" type="password" id="password"placeholder="Password"onChange={(event) => setPassword(event.target.value)}/>
                        </div>
                        
-                       <div className="form-group d-grid mt-4 ">
-                       <input  className="btn btn-primary" type="submit" value="Registration" />
+                       <div className="form-group d-grid mt-4 mb-3 ">
+                       <input  className="btn btn-primary" type="submit" value="რეგისტრაცია" />
 
                        </div>
                        <p>
@@ -64,8 +65,12 @@ function Signup(){
                 </form>
               </div>
           </div>
+          
 
         </div>
+
+        
+        
 
       </React.Fragment>
 

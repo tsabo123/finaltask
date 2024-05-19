@@ -3,6 +3,7 @@ import axios from 'axios';
 import { Link } from "react-router-dom";
 import Navbar from './Navbar';
 import Carousel from './Carousel';
+import Footer from './Footer';
 
 
 
@@ -28,9 +29,10 @@ function Home () {
     <Navbar></Navbar>
     <Carousel></Carousel>
    
-    <div className='container'>
+    <div className='container mt-5 shadow-lg p-3 mb-5 bg-body-tertiary rounded  '>
      <div className='row justify-content-center'>
-        <div className=' col-12'>
+        <h5 className='d-flex justify-content-center color-prymery mt-3'>LATEST STORIES</h5>
+        <div className=' col-12 mt-5'>
             {
                 data.map((item, index)=> <div className='card mb-5'>
                     <div className='card-header'>
@@ -59,6 +61,8 @@ function Home () {
      </div>
 
     </div>
+
+    <Footer></Footer>
    </React.Fragment>
     
   );

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
+import Footer from './Footer';
 
 import { Link } from 'react-router-dom';
 
@@ -27,12 +28,10 @@ function Login  () {
     return (
       <React.Fragment>
         <div className="container mt-5 ">
-          <div className="row justify-content-center align-items-center ">
+          <div className="row d-flex justify-content-center align-items-center mt-5">
               <div className="col-6">
 
-              <p>
-                    გაიარეთ ავტორიზაცია
-                </p>
+              <h2 className='d-flex justify-content-center '>გაიარეთ ავტორიზაცია</h2>
                 <form method="POST" onSubmit={(event)=> Login (event)}>
                        <div className="form-group mb-3">
                         <label htmlFor="email">Email</label>
@@ -49,10 +48,10 @@ function Login  () {
                           Remember me
                         </label>
                       </div>
-                       <input  className="btn btn-primary" type="submit" value="ავტორიზაცია" />
+                       <input  className="btn btn-primary mt-3" type="submit" value="ავტორიზაცია" />
 
                        </div>
-                       <p className="text-end me-2">
+                       <p className="text-end me-2 mt-4">
                        Forgot:
                        <Link to="/Signup">Password?</Link>
                         <Link className="ms-2" to="/Signup">Sign up</Link>
@@ -64,6 +63,8 @@ function Login  () {
           </div>
 
         </div>
+
+      
 
       </React.Fragment>
     )
